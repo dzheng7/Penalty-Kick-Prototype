@@ -1,0 +1,45 @@
+<CoordinateSystem> { Z-up } 
+<Material> Material.005 {
+  <Scalar> diffr { 0.640000 }
+  <Scalar> diffg { 0.640000 }
+  <Scalar> diffb { 0.640000 }
+  <Scalar> specr { 0.500000 }
+  <Scalar> specg { 0.500000 }
+  <Scalar> specb { 0.500000 }
+  <Scalar> shininess { 12.5 }
+  <Scalar> ambr { 1.000000 }
+  <Scalar> ambg { 1.000000 }
+  <Scalar> ambb { 1.000000 }
+  <Scalar> emitr { 0.000000 }
+  <Scalar> emitg { 0.000000 }
+  <Scalar> emitb { 0.000000 }
+}
+
+  <Group> BackNet {
+    <Transform> {
+      <Matrix4> {
+        7.25 0.0 0.0 0.0 
+        0.0 -3.2139382362365723 3.8302221298217773 0.0 
+        0.0 -0.7660444378852844 -0.6427876353263855 0.0 
+        0.0 3.5 4.199999809265137 1.0 
+      }
+    }
+    
+    <VertexPool> BackNet {
+    
+      <Vertex> 0 {-7.250000 6.713938 0.369778
+      }
+      <Vertex> 1 {7.250000 6.713938 0.369778
+      }
+      <Vertex> 2 {7.250000 0.286062 8.030222
+      }
+      <Vertex> 3 {-7.250000 0.286062 8.030222
+      }}
+    
+    
+    <Polygon> {
+      <MRef> { Material.005 }
+      <Normal> {0.000000 -0.766044 -0.642788}
+      <VertexRef> { 0 1 2 3 <Ref> { BackNet }} 
+    }
+  }
